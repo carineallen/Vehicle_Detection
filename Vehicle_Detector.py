@@ -25,7 +25,7 @@ while True:
         break
 
     # Detecting car
-    ScaleValue = 2 #Parameter specifying how much the image size is reduced at each image scale.
+    ScaleValue = 1.7 #Parameter specifying how much the image size is reduced at each image scale.
     Neighbor = 2 #Parameter specifying how many neighbors each candidate rectangle should have
     cars = car_detector.detectMultiScale(grayscaled_frame,ScaleValue,Neighbor)
 
